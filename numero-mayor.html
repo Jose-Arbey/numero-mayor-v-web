@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numero Mayor</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <div class="tablero-promedio">
+      <div class="contenido-centrado">
+        <h1>Averigua qué número es el Mayor</h1>
+        <p id="texto-promedio" class="tablero-promedio__resultado">0</p>
+        <input id="valor_promedio" class="tablero-promedio__input" type="number">
+        <p class="descripcion">Ingresa 10 números y presiona Ver Mayor para saber cual es el mayor de todos</p>
+        <div class="tablero-promedio__buttons">
+          <div class="left-buttons">
+            <button id="ingresar" class="ingresar amarillo">Ingresar</button>
+            <button id="promedio" class="promedio verde">Ver Mayor</button>
+          </div>
+          <div class="right-buttons">
+            <button id="reset" class="reset amarillo">Reset</button>
+          </div>
+        </div>
+        <ul>
+          <li>Escribe un numero y presiona ingresar para meterlo al arreglo</li>
+          <li>Ver Mayor para calcular el mayor de todos</li>
+          <li>Reset para comenzar de nuevo</li>
+        </ul>
+      </div>
+      <div class="posicion-container">
+        <p class="posicion"><span id="posicion-valor" class="posicion-valor">0</span>Posicion en el arreglo</p>
+      </div>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
